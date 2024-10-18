@@ -300,6 +300,12 @@ footer p {
 /*
 Animating title
 */
+.my-animation {
+  animation: bounce 2s linear 1;
+}
+.my-animation {
+  animation-play-state: paused;
+}
 
 .subtitle {
   text-align: center;
