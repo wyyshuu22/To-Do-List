@@ -18,12 +18,15 @@ body {
   );
 }
 
+
 .container {
   width: 100%;
   max-width: 1000px;
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 170px;
+  max-height: 500px;  /* Set a reasonable max height */
+  overflow-y: auto;   /* Enable scrolling if the height exceeds this limit */
 }
 
 .subtitle {
@@ -300,12 +303,6 @@ footer p {
 /*
 Animating title
 */
-.my-animation {
-  animation: bounce 2s linear 1;
-}
-.my-animation {
-  animation-play-state: paused;
-}
 
 .subtitle {
   text-align: center;
@@ -315,6 +312,7 @@ Animating title
   font-size: 5rem;
   padding: 8px 16px;
   text-shadow: #000000 3px 4px 10px;
+  animation: bounce 2s ease-in-out 3; /* Plays 3 times and stops */
 }
 
 .sort-buttons {

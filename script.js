@@ -29,6 +29,8 @@ document.querySelector('.js-name-input').addEventListener('input', (e) => {
 let dateCheck = false;
 let timeCheck = false;
 
+
+
 document.querySelector('.js-date-input').addEventListener('click', (e) => {
   e.preventDefault();
   if (!dateCheck) {
